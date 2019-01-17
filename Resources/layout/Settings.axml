@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:src="@drawable/background"
+        android:scaleType="centerCrop" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:background="@drawable/edit_text_custom"
+            android:padding="20dp"
+            android:layout_margin="20dp">
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="Settings"
+                android:textColor="@android:color/white"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="20dp"
+                android:gravity="center" />
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="MSISDN"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:layout_marginBottom="20dp" />
+            <EditText
+                android:inputType="phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:hint="ENTER MSISDN"
+                android:textColor="@android:color/white"
+                android:id="@+id/SettingsMSISDNEtxt" />
+
+			<TextView
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:id="@+id/confirmationTxt"
+                android:text="Municipality"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="20dp" />
+
+            <EditText
+                android:inputType="text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:hint="ENTER MUNICIPALITY NAME"
+                android:textColor="@android:color/white"
+                android:id="@+id/SettingsMunicipalityEtxt" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="horizontal">
+            <Button
+                android:text="Confirm"
+                android:layout_marginLeft="20dp"
+                android:textSize="20dp"
+                android:textColor="@android:color/white"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:id="@+id/SettingsConfirmButton"
+                android:background="@drawable/edit_text_custom" />
+
+            <Button
+                android:text="Back"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="20dp"
+                android:textSize="20dp"
+                android:textColor="@android:color/white"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:id="@+id/SettingsCancelButton"
+                android:background="@drawable/edit_text_custom" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

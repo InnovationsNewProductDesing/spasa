@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background" />
+    <ScrollView
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+        <LinearLayout
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:orientation="vertical">
+			<TextView
+				android:layout_height="wrap_content"
+				android:layout_width="match_parent"
+				android:text="Balance: "
+				android:gravity="right"
+				android:layout_margin="10dp"
+				android:textSize="20dp"
+				android:id="@+id/balanceTxtView"
+			/>
+
+            <ImageView
+                android:src="@drawable/logo"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/cashierNameTxt"
+                android:textSize="20sp"
+                android:text="Cashier Name"
+                android:textColor="@android:color/white"
+                android:padding="10dp"
+                android:background="@drawable/edit_text_custom"
+                android:layout_margin="15dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/MunicipalityName"
+                android:textSize="20sp"
+                android:text="Municipality Name"
+                android:textColor="@android:color/white"
+                android:padding="10dp"
+                android:background="@drawable/edit_text_custom"
+                android:layout_margin="15dp" />
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="10dp"
+                android:id="@+id/radioGroup1"
+                android:textColor="@android:color/white">
+                <RadioButton
+					android:padding="10dp"
+                    android:layout_width="0dp"
+					android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:layout_margin="5dp"
+                    android:text="  Electricity  "
+                    android:id="@+id/electricityRadioButton"
+					android:textColor="@android:color/black"
+					android:background="@drawable/edit_text_custom_white"
+
+				/>
+                <RadioButton
+					android:padding="10dp"
+					android:background="@drawable/edit_text_custom_white"
+					android:layout_width="0dp"
+					android:layout_weight="1"
+					android:layout_height="wrap_content"
+                    android:text="  Water  "
+                    android:layout_margin="5dp"
+                    android:textSize="20sp"
+                    android:id="@+id/waterRadioButton"
+                    android:layout_gravity="center"
+                    android:textColor="@android:color/black" />
+            </RadioGroup>
+            <EditText
+				android:textColorHint="@color/material_grey_800"
+                android:textColor="@android:color/black"                
+				android:padding="10dp"
+                android:background="@drawable/edit_text_custom_white"
+                android:layout_margin="15dp"
+				android:inputType="number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/amountetxt"
+                android:textSize="20sp"
+                android:hint="Amount" />
+			<EditText
+					android:textColorHint="@color/material_grey_800"
+					android:textColor="@android:color/black"                      android:padding="10dp"
+                    android:background="@drawable/edit_text_custom_white"
+                    android:layout_margin="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/AccNoetxt"
+                    android:textSize="20sp"
+                    android:hint="Swipe Customer Card or Enter Account Number" 
+                	android:inputType="number"/>
+           
+                
+
+            <Button
+                android:textColor="@android:color/white"
+                android:background="@drawable/edit_text_custom"
+                android:text="Next"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:id="@+id/nextButton" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
